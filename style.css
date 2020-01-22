@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+/*!
+Theme Name: Clinic childtheme
+Template:   cocoon-master
+Version:    1.1.0
+author: mello
+contact: info@melloblo.com
+blog:https:melloblo.com
+*/
+
+/************************************
+** 子テーマ用のスタイルを書く
+************************************/
+/*必要ならばここにコードを書く*/
+
+body{
+font-family: "YuMin", "ヒラギノ明朝 Pro W3", "ＭＳ Ｐ明朝", "MS PMincho", "Hiragino Mincho Pro", serif;
+background-color: white;
+}
+
+a:hover {
+    color: #769fcd;
+}
+
+.sidebar h3 {
+    background-color: #d6e6f2;
+}
+
+.navi {
+    background-color: transparent;
+}
+.header-container, .main, .sidebar, .footer {
+    background-color: transparent;
+}
+
+.navi-in>ul li {
+    width: 17%;
+}
+
+.header {
+   background-attachment: fixed;
+    background-size: cover;
+    border-radius: 0 0 50% 50%;
+    height: 60vh;
+}
+
+div#header-in {
+    position: absolute;
+    top: 30%;
+    max-width: 980px;
+    left: 0;
+    right: 0;
+}
+
+#header-in,.site-name-text {
+    color: #f7fbfc;
+}
+
+.navi-in a{
+   color: #769fcd;
+}
+
+.logo-text,.tagline{
+  text-align: left;
+}
+
+.logo-text {
+    padding: 0px;
+    font-size: 1em;
+}
+span.site-name-text {
+    font-size: 2.2em;
+}
+.tagline {
+    font-size: 1.1em;
+    
+}
+
+
+
+h1,h2,h3 {
+    color: #769fcd;
+}
+
+h2.h2.contactmsg {
+    color: #f7fbfc;
+}
+
+.section{
+  padding: 60px 0px;
+  /* max-width: 980px; */
+    margin: 0 auto;
+}
+.section.mainsection {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.section.aboutsec {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.section.intro {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.container.mainmsg h2 {
+    font-size: 2.5em;
+}
+
+.container.introitem h2 {
+    font-size: 2.2em;
+}
+
+.contact{
+  display: block;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color:#b9d7ea;
+    padding: 100px 0px;
+}
+
+.contact .btn {
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    /* width: 20%; */
+    display: inline-block;
+    background-color: #f7fbfc;
+    color: #769fcd;
+    font-size: 1.2em;
+    margin: 20px 0px;
+}
+
+
+p{
+    margin-bottom: 1.2em;
+    margin-top: 0px;
+}
+
+.mainmsg{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.submsg{
+  display: flex;
+  justify-content: space-between;
+}
+
+.introitem {
+    display: flex;
+    justify-content: space-around;
+}
+
+.newsaccess {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item img{
+  width: 250px;
+}
+
+h2.h2 {
+    font-size: 1.6em;
+}
+
+h3 a {
+    font-size: 0.8em;
+        text-decoration: none;
+}
+
+.container.mainarea p {
+    font-size: 0.8em;
+}
+
+.add_copy{
+	text-align:center;
+	font-size:12px;
+}
+
+.section.aboutsec .item{
+  width: 100%;
+}
+.section.aboutsec iframe {
+    width: 100%;
+    height: 300px;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    background-color: #769fcd;
+    color: #f7fbfc;
+    font-size: 1.3em;
+    border-radius: 13px;
+}
+
+/************************************
+** レスポンシブデザイン用のメディアクエリ
+************************************/
+/*1240px以下*/
+@media screen and (max-width: 1240px){
+  /*必要ならばここにコードを書く*/
+}
+
+/*1023px以下*/
+@media screen and (max-width: 1023px){
+  /*必要ならばここにコードを書く*/
+}
+
+/*834px以下*/
+@media screen and (max-width: 834px){
+  /*必要ならばここにコードを書く*/
+}
+
+/*480px以下*/
+@media screen and (max-width: 480px){
+  /*必要ならばここにコードを書く*/
+	
+	
+	.section {
+    padding: 30px 0;
+    
+}
+
+  div#header-in {
+    /* position: absolute; */
+    /* top: 0; */
+    /* max-width: 980px; */
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
+    display: flex;
+    align-items: center;
+    height: 30vh;
+    align-content: center;
+    position: relative;
+    top: 0;
+}
+
+#header .site-name-text {
+    font-size: 1.6em;
+}
+
+.mainmsg,.submsg,.introitem,.newsaccess{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .header {
+	  background-image:none !important;
+    background-size: contain;
+	  background-attachment:fixed;
+    /* background-position: 50%; */
+/*     border-radius: 0 0 20% 20%; */
+    height: 23vh;
+  }
+	.header::before {
+  content:"";
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  width:100%;
+  height: 20vh;
+ background:url(/mentalsitetheme00/wp-content/uploads/2020/01/meltalhero.jpg) center/cover no-repeat;
+	}
+	
+	#content {
+    background: #fff;
+}
+	
+.container.introitem .item {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+	
+	.item img {
+   width: 60%;
+		text-align: center;
+}
+	
+.newsaccess .item {
+    padding: 20px 0px;
+}
+}
